@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 
 interface ButtonProps extends React.ComponentProps<"button"> {
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "disabled";
   size?: "full" | "fit";
 }
 
@@ -20,6 +20,8 @@ export const Button = ({
     primary:
       "bg-dark-blue border border-dark-blue text-white hover:bg-opacity-70",
     outline: "border border-dark-blue/50 text-dark-blue hover:bg-dark-blue/10",
+    disabled:
+      "bg-dark-blue/70 border border-transparent text-white hover:cursor-not-allowed",
   };
 
   const sizeClasses = {

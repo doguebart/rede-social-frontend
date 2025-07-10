@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #f6f7f9;
+  --color-dark-blue: #191c24;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
